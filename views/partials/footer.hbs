@@ -3,6 +3,12 @@
     <script src="{{path}}" type="text/javascript"></script>
     {{/each}}
 
+    {{#if conf.typekit}}
+    <!-- Load Scripts -->
+    <script type="text/javascript" src="//use.typekit.net/{{{conf.typekit}}}.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    {{/if}}
+
     <!-- Load Config and Scripts -->
     <script>
 

@@ -19,6 +19,7 @@ var conf = {
       path: '/contact'
     }
   ],
+  typekit: 'tvf5sur',
   styles: [
     {'path':'/css/app.css'}
   ],

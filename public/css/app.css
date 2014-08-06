@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700);
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -130,16 +129,16 @@ table {
 }
 /*
  * General Settings
- **/
+ */
 /*
  * Font Settings.
- **/
+ */
 /*
  * Breakpoints.
- **/
+ */
 /*
  * Color Settings
- **/
+ */
 /*
  * Text Formatting
  */
@@ -197,7 +196,7 @@ table {
 }
 body {
   font-size: 18px;
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'brandon-grotesque', 'Helvetica', sans-serif;
 }
 p {
   margin-top: 2em;
@@ -233,7 +232,8 @@ header {
   padding: 1em 0;
 }
 nav {
-  position: relative;
+  width: 100%;
+  position: fixed;
   z-index: 998;
   top: 4em;
   background: #2a2a2a;
@@ -267,6 +267,9 @@ aside {
 .wrapper.content {
   width: 680px;
 }
+/*
+ * The Brand.
+ */
 .brand {
   display: block;
   font-weight: 600;
@@ -274,29 +277,48 @@ aside {
   letter-spacing: 0.2em;
   padding: 0.5em 1em;
 }
+/*
+ * Navigation.
+ */
 .nav.header a {
-  font-weight: 500;
+  font-weight: 400;
   display: inline-block;
   color: rgba(220, 220, 220, 0.6);
   text-transform: uppercase;
-  font-size: 0.87em;
+  font-size: 0.83em;
   letter-spacing: 0.1em;
   padding: 0.5em 1em;
 }
 .nav.header a:hover {
   color: #dcdcdc;
 }
+/*
+ * Featured Content.
+ */
 .featured.main {
   height: 36em;
   overflow: hidden;
   background: #dcdcdc;
 }
+/*
+ * Video Backgrounds and Videos.
+ */
 .video-bg {
   position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
 }
 .video-bg.featured {
   position: absolute;
-  top: -10%;
+  width: 100%;
+}
+.video-bg.featured video {
+  width: 100%;
 }
 .video-bg.featured::before {
   content: "";
@@ -305,6 +327,9 @@ aside {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
+/*
+ * Content Feeds.
+ */
 .feed {
   width: 70%;
 }

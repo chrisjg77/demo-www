@@ -1,4 +1,6 @@
-// The brand.
+/*
+ * The Brand.
+ */
 .brand {
   display: block;
   font-weight: 600;
@@ -7,15 +9,17 @@
   padding: 0.5em 1em;
 }
 
-// Navigation.
+/*
+ * Navigation.
+ */
 .nav {
   &.header {
     a {
-      font-weight: 500;
+      font-weight: 400;
       display: inline-block;
       color: fadeout(@auto_light,40%);
       text-transform: uppercase;
-      font-size: 0.87em;
+      font-size: 0.83em;
       letter-spacing: 0.1em;
       padding: 0.5em 1em;
     }
@@ -26,7 +30,9 @@
   }
 }
 
-// Featured content.
+/*
+ * Featured Content.
+ */
 .featured {
   &.main {
     height: 36em;
@@ -35,13 +41,20 @@
   }
 }
 
-// Video and video backgrounds.
+/*
+ * Video Backgrounds and Videos.
+ */
 .video-bg {
   position: relative;
+  .smack-dab-middle;
 
   &.featured {
     position: absolute;
-    top: -10%;
+    width: 100%;
+
+    video {
+      width: 100%;
+    }
 
     // Overlay prevents user controlling video with right-click
     &::before {
@@ -54,12 +67,14 @@
   }
 }
 
+/*
+ * Content Feeds.
+ */
 .feed {
   width: 70%;
 }
 
 .post {
-
   &.title {
     padding: 1em;
   }
