@@ -1,0 +1,24 @@
+{{> header}}
+
+<section class="featured main">
+  <div class="wrapper content">
+    <h2 class="text-centered">Just for looks.</h2>
+  </div>
+  <div class="video-bg featured">
+    <video src="/video/stock-video.mp4" autoplay loop></video>
+  </div>
+</section>
+
+<main class="feed">
+  {{#each data.posts}}
+    <article class="post title">
+      <h3>{{{this.title}}}</h3>
+    </article>
+  {{/each}}
+</main>
+
+<aside>
+
+</aside>
+
+{{> footer}}

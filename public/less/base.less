@@ -1,0 +1,76 @@
+/*
+ * This is only for HTML5 semantic markup.
+ */
+
+* {
+  .box-sizing(border-box);
+}
+
+body {
+  font-size: @main_text_size;
+  font-family: @main_font_stack;
+}
+
+p {
+  margin-top: 2em;
+  font-size: 1em;
+  line-height: 1.5;
+  color: @auto_medium;
+}
+
+em {}
+
+h1,h2,h3,h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: @font_weight_normal;
+  font-size: 2.7em;
+  color: #2a2a2a;
+}
+
+a {
+  text-decoration: none;
+  .transition(all 0.275s);
+}
+
+header {
+  height: @header_h;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  color: @header_color;
+  background: @header_bg_color;
+  padding: 1em 0;
+}
+
+nav {
+  position: relative;
+  z-index: 998;
+  top: @header_h;
+  background: @header_bg_color;
+  padding-bottom: 1em;
+}
+
+section {
+  position: relative; // For absolute positioned children.
+  padding: 4em 0;
+}
+
+main {
+  padding: 2em 1em;
+  background: @auto_lighter;
+  min-height: 1000px;
+  float: left;
+}
+
+article {
+  background: @light;
+}
+
+aside {
+  width: 30%;
+  min-height: 1000px;
+  float: right;
+}

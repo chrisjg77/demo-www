@@ -1,0 +1,66 @@
+// The brand.
+.brand {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0.5em 1em;
+}
+
+// Navigation.
+.nav {
+  &.header {
+    a {
+      font-weight: 500;
+      display: inline-block;
+      color: fadeout(@auto_light,40%);
+      text-transform: uppercase;
+      font-size: 0.87em;
+      letter-spacing: 0.1em;
+      padding: 0.5em 1em;
+    }
+
+    a:hover {
+      color: @auto_light;
+    }
+  }
+}
+
+// Featured content.
+.featured {
+  &.main {
+    height: 36em;
+    overflow: hidden;
+    background: @auto_light;
+  }
+}
+
+// Video and video backgrounds.
+.video-bg {
+  position: relative;
+
+  &.featured {
+    position: absolute;
+    top: -10%;
+
+    // Overlay prevents user controlling video with right-click
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.feed {
+  width: 70%;
+}
+
+.post {
+
+  &.title {
+    padding: 1em;
+  }
+}
