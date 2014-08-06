@@ -10,7 +10,8 @@ requirejs.config({
     // Vendor libraries.
     'jquery': '../vendor/jquery',
     'text': '../vendor/require.text',
-    'handlebars': '../vendor/handlebars'
+    'handlebars': '../vendor/handlebars',
+    'masonry': '../vendor/masonry'
   },
 
   // Shims for non-AMD compatible libraries.

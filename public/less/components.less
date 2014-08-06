@@ -50,7 +50,8 @@
 
   &.featured {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
+    min-height: 120%;
 
     video {
       width: 100%;
@@ -74,8 +75,24 @@
   width: 70%;
 }
 
-.post {
-  &.title {
-    padding: 1em;
+.title {
+  &.post {
+    padding: @post_padding @post_padding 0.25em;
+  }
+}
+
+.excerpt {
+  &.post {
+    padding: 0.25em @post_padding @post_padding;
+  }
+}
+
+.image {
+  &.post {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 }

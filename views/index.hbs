@@ -10,11 +10,19 @@
 </section>
 
 <main class="feed">
+  <div class="masonry">
   {{#each data.posts}}
-    <article class="post title">
-      <h3>{{{this.title}}}</h3>
+    <article class="block">
+      {{#if this.image}}
+      <div class="image post">
+        <img src="{{{this.image}}}" />
+      </div>
+      {{/if}}
+      <h3 class="title post">{{{this.title}}}</h3>
+      <p class="excerpt post">{{{this.excerpt}}}</p>
     </article>
   {{/each}}
+  </div>
 </main>
 
 <aside>

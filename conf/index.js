@@ -1,5 +1,5 @@
 var conf = {
-  title: 'Organization',
+  title: 'The Action Committee',
   description: 'Happiness lies in the joy of achievement and the thrill of creative effort.',
   pages: [
     {
@@ -13,6 +13,10 @@ var conf = {
     {
       title: 'Join',
       path: '/join'
+    },
+    {
+      title: 'Take Action',
+      path: '/action'
     },
     {
       title: 'Contact',
