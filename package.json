@@ -1,8 +1,8 @@
 {
   "name": "demo-org-site",
-  "subdomain": "demo-org-site",
+  "subdomain": "samplesite",
   "description": "A sample website for an active organization.",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "private": true,
   "main": "server.js",
   "repository": "git-repo",
@@ -27,7 +27,6 @@
     "growl": "^1.7.0",
     "grunt": "^0.4.4"
   },
-  "subdomain": "samplesite",
   "scripts": {
     "start": "node server.js"
   },
