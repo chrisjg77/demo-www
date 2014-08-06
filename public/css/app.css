@@ -197,6 +197,7 @@ table {
 body {
   font-size: 18px;
   font-family: 'brandon-grotesque', 'Helvetica', sans-serif;
+  padding-top: 1px;
 }
 p {
   font-size: 1em;
@@ -253,7 +254,6 @@ article {
   background: #fefefe;
 }
 aside {
-  width: 30%;
   min-height: 1000px;
   float: right;
 }
@@ -263,6 +263,7 @@ aside {
 .wrapper {
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 .wrapper.content {
   width: 680px;
@@ -298,33 +299,49 @@ aside {
 /*
  * Featured Content.
  */
-.featured.main {
-  height: 36em;
+.featured {
+  margin-top: 4em;
   overflow: hidden;
   background: #dcdcdc;
+  height: 12em;
+}
+@media screen and (min-width: 500px) {
+  .featured {
+    height: 20em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .featured {
+    height: 25em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .featured {
+    height: 30em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .featured {
+    height: 36em;
+  }
 }
 /*
  * Video Backgrounds and Videos.
  */
 .video-bg {
-  position: relative;
-  position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
-}
-.video-bg.featured {
   position: absolute;
-  min-width: 100%;
-  min-height: 120%;
-}
-.video-bg.featured video {
   width: 100%;
 }
-.video-bg.featured::before {
+.video-bg video {
+  width: 100%;
+}
+.video-bg::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -334,19 +351,34 @@ aside {
 /*
  * Content Feeds.
  */
-.feed {
-  width: 70%;
+.post {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -webkit-transition: all 0.475s;
+  -moz-transition: all 0.475s;
+  -ms-transition: all 0.475s;
+  -o-transition: all 0.475s;
 }
-.title.post {
+.post.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.post-title {
   padding: 1em 1em 0.25em;
 }
-.excerpt.post {
+.post-excerpt {
   padding: 0.25em 1em 1em;
 }
-.image.post {
+.post-image {
   overflow: hidden;
 }
-.image.post img {
+.post-image img {
   width: 100%;
 }
 /*!
@@ -3441,7 +3473,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 .masonry .block {
-  width: 48%;
   margin: 1%;
+}
+@media screen and (min-width: 768px) {
+  .masonry .block {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masonry .block {
+    width: 31.3333%;
+  }
 }
 /*# sourceMappingURL=/css/app.css.map */

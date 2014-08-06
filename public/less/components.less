@@ -34,10 +34,22 @@
  * Featured Content.
  */
 .featured {
-  &.main {
+  margin-top: @header_h;
+  overflow: hidden;
+  background: @auto_light;
+  height: 12em;
+
+  @media screen and (min-width: @break_sm) {
+    height: 20em;
+  }
+  @media screen and (min-width: @break_md) {
+    height: 25em;
+  }
+  @media screen and (min-width: @break_lg) {
+    height: 30em;
+  }
+  @media screen and (min-width: @break_xl) {
     height: 36em;
-    overflow: hidden;
-    background: @auto_light;
   }
 }
 
@@ -45,26 +57,22 @@
  * Video Backgrounds and Videos.
  */
 .video-bg {
-  position: relative;
   .smack-dab-middle;
 
-  &.featured {
+  position: absolute;
+  width: 100%;
+
+  video {
+    width: 100%;
+  }
+
+  // Overlay prevents user controlling video with right-click
+  &::before {
+    content: "";
     position: absolute;
-    min-width: 100%;
-    min-height: 120%;
-
-    video {
-      width: 100%;
-    }
-
-    // Overlay prevents user controlling video with right-click
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.2);
-    }
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
   }
 }
 
@@ -72,27 +80,31 @@
  * Content Feeds.
  */
 .feed {
-  width: 70%;
 }
 
-.title {
-  &.post {
-    padding: @post_padding @post_padding 0.25em;
+.post {
+  opacity: 0;
+  .transform(translateY(100%));
+  .transition(all 0.475s); // @todo - fix problem with Masonry
+
+  &.loaded {
+    opacity: 1;
+    .transform(translateY(0));
   }
 }
 
-.excerpt {
-  &.post {
-    padding: 0.25em @post_padding @post_padding;
-  }
+.post-title {
+  padding: @post_padding @post_padding 0.25em;
 }
 
-.image {
-  &.post {
-    overflow: hidden;
+.post-excerpt {
+  padding: 0.25em @post_padding @post_padding;
+}
 
-    img {
-      width: 100%;
-    }
+.post-image {
+  overflow: hidden;
+
+  img {
+    width: 100%;
   }
 }

@@ -97,7 +97,14 @@
 
 .masonry {
   .block {
-    width: 48%;
     margin: 1%;
+
+    @media screen and (min-width: @break_md) {
+      width: 48%;
+    }
+
+    @media screen and (min-width: @break_xl) {
+      width: 31.3333%;
+    }
   }
 }

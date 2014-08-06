@@ -1,32 +1,34 @@
 {{> header}}
 
-<section class="featured main">
-  <div class="wrapper content">
-    <h2 class="text-centered">Just for looks.</h2>
-  </div>
-  <div class="video-bg featured">
+<section class="featured">
+  <div class="video-bg">
     <video src="/video/stock-video.mp4" autoplay loop></video>
+  </div>
+  <div class="wrapper content">
+    <h1 class="text-centered">Just for looks.</h1>
   </div>
 </section>
 
-<main class="feed">
-  <div class="masonry">
-  {{#each data.posts}}
-    <article class="block">
-      {{#if this.image}}
-      <div class="image post">
-        <img src="{{{this.image}}}" />
-      </div>
-      {{/if}}
-      <h3 class="title post">{{{this.title}}}</h3>
-      <p class="excerpt post">{{{this.excerpt}}}</p>
-    </article>
-  {{/each}}
-  </div>
-</main>
+<div class="grid">
+  <main class="feed block block-md-9">
+    <div class="masonry">
+    {{#each data.posts}}
+      <article class="post block">
+        {{#if this.image}}
+        <div class="image post-image">
+          <img src="{{{this.image}}}" />
+        </div>
+        {{/if}}
+        <h3 class="title post-title">{{{this.title}}}</h3>
+        <p class="excerpt post-excerpt">{{{this.excerpt}}}</p>
+      </article>
+    {{/each}}
+    </div>
+  </main>
 
-<aside>
+  <aside class="block block-md-3">
 
-</aside>
+  </aside>
+</div>
 
 {{> footer}}

@@ -10,5 +10,12 @@ define(function (require) {
       isAnimated: false
     });
 
+    $('.feed .post').each(function(i) {
+      setTimeout(function() {
+        $('.feed article.post').eq(i).addClass('loaded');
+      },75*i);
+    });
+
+
 });
 

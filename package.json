@@ -1,5 +1,6 @@
 {
-  "name": "demo-site",
+  "name": "demo-org-site",
+  "subdomain": "demo-org-site",
   "description": "A sample website for an active organization.",
   "version": "0.0.1",
   "private": true,
