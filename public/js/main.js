@@ -12,6 +12,7 @@ define(function (require) {
       $main       = $('main'),
       $aside      = $('aside'),
       $nav_link   = $('.nav a'),
+      $feed       = $('.feed'),
       nav_pos     = $nav.offset().top,
       nav_h       = $nav.outerHeight(),
       scroll_top  = $window.scrollTop(),
@@ -28,8 +29,7 @@ define(function (require) {
   var page = {
 
     loadFeed: function() {
-      var $feed = $('.feed'),
-          $post = $('.feed .post');
+      var $post = $('.feed .post');
 
       if ($feed) {
         $post.each(function(i) {
@@ -48,7 +48,7 @@ define(function (require) {
         'position':'absolute',
         'top':nav_pos-1
       });
-      $aside.css({'height':main_h});
+      $aside.css({'height':$feed.outerHeight()});
     },
 
     scrollFunctions: function() {

@@ -1,6 +1,6 @@
 var conf = {
   title: 'The Action Committee',
-  description: 'Happiness lies in the joy of achievement and the thrill of creative effort.',
+  description: 'Happiness lies in the joy of achievement and the thrill of creative effort. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nostrum eveniet vero iste repellat sit laboriosam, omnis facilis, sequi ad.',
   brand: 'img/ac-logo-white.svg',
   pages: [
     {

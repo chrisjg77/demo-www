@@ -2,7 +2,7 @@
   "name": "demo-org-site",
   "subdomain": "samplesite",
   "description": "A sample website for an active organization.",
-  "version": "0.0.1-1",
+  "version": "0.0.1-3",
   "private": true,
   "main": "server.js",
   "repository": "git-repo",

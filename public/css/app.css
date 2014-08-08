@@ -239,6 +239,9 @@ a {
   -ms-transition: all 0.275s;
   -o-transition: all 0.275s;
 }
+/*
+ * Layout.
+ */
 header {
   position: relative;
   width: 100%;
@@ -266,6 +269,45 @@ aside {
   float: right;
   background: #fefefe;
 }
+footer {
+  padding: 2em 1em 1em;
+  min-height: 24em;
+  background: #2a2a2a;
+  position: relative;
+  z-index: 10;
+}
+footer .block {
+  padding: 2%;
+}
+footer .meta {
+  font-size: 0.87em;
+  color: #777777;
+}
+footer h3 {
+  color: #777777;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.4em;
+  font-size: 0.87em;
+}
+footer p {
+  color: #dcdcdc;
+  font-size: 1em;
+}
+footer p a {
+  display: inline-block;
+  font-size: 1em;
+}
+footer a {
+  color: #c3c3c3;
+  font-size: 0.87em;
+  font-weight: 100;
+  display: block;
+  margin-bottom: 1.5em;
+}
+/*
+ * Interface elements.
+ */
 button {
   outline: none;
   font-family: 'brandon-grotesque', 'Helvetica', sans-serif;
@@ -350,6 +392,13 @@ button:focus {
 .nav.header a:hover {
   border-bottom: 2px solid #dcdcdc;
   color: #dcdcdc;
+}
+.links-social {
+  font-size: 1.2em;
+}
+.links-social a {
+  display: inline-block;
+  margin: 1em 1em;
 }
 /*
  * A slide down panel for more nav content.
@@ -454,6 +503,9 @@ button:focus {
 .feed-filter {
   padding: 1em 1%;
 }
+/*
+ * Posts.
+ */
 .post {
   opacity: 0;
   cursor: pointer;
@@ -515,6 +567,21 @@ button:focus {
 .post-meta {
   padding: 0.25em 1em 1em;
 }
+/*
+ * Ads.
+ */
+.feed-ads {
+  padding: 2em;
+}
+.ad {
+  background: #dcdcdc;
+  height: 13em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+/*
+ * Buttons.
+ */
 .button {
   padding: 0.25em 1em;
   background: #27ae60;

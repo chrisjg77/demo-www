@@ -37,6 +37,9 @@ a {
   .transition(all 0.275s);
 }
 
+/*
+ * Layout.
+ */
 header {
   position: relative;
   width: 100%;
@@ -70,6 +73,52 @@ aside {
   background: @light;
 }
 
+footer {
+  padding: 2em 1em 1em;
+  min-height: 24em;
+  background: @auto;
+  position: relative;
+  z-index: 10;
+
+  .block {
+    padding: 2%;
+  }
+
+  .meta {
+    font-size: 0.87em;
+    color: @auto_medium;
+  }
+
+  h3 {
+    color: @auto_medium;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.4em;
+    font-size: 0.87em;
+  }
+
+  p {
+    color: @auto_light;
+    font-size: 1em;
+
+    a {
+      display: inline-block;
+      font-size: 1em;
+    }
+  }
+
+  a {
+    color: darken(@auto_light,10%);
+    font-size: 0.87em;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 1.5em;
+  }
+}
+
+/*
+ * Interface elements.
+ */
 button {
   outline: none;
   font-family: @main_font_stack;
