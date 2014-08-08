@@ -17,6 +17,7 @@ p {
   font-weight: 300;
   line-height: 1.5;
   color: @auto_medium;
+  margin-bottom: 1em;
 }
 
 em {}
@@ -37,8 +38,7 @@ a {
 }
 
 header {
-  height: @header_h;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 999;
   color: @header_color;
@@ -48,23 +48,16 @@ header {
 
 nav {
   width: 100%;
-  position: fixed;
-  z-index: 998;
-  top: @header_h;
-  background: @header_bg_color;
-  padding-bottom: 1em;
+  position: relative;
 }
 
 section {
   position: relative; // For absolute positioned children.
-  padding: 4em 0;
+  padding: 2em 0;
 }
 
 main {
-  padding: 2em 1em;
   background: @auto_lighter;
-  min-height: 1000px;
-  float: left;
 }
 
 article {
@@ -74,4 +67,24 @@ article {
 aside {
   min-height: 1000px;
   float: right;
+  background: @light;
+}
+
+button {
+  outline: none;
+  font-family: @main_font_stack;
+  background: none;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 0.15em 1em;
+  opacity: 0.5;
+  cursor: pointer;
+  .transition(all 0.275s);
+  .border-radius(25px);
+  .box-shadow(none);
+}
+
+button:hover,
+button:focus {
+  border: 1px solid @auto_medium;
 }

@@ -8,6 +8,11 @@ router.get('/', function(req, res) {
   res.render('index',{'conf':conf,'data':data});
 });
 
+/* About Page */
+router.get('/about', function(req, res) {
+  res.render('about',{'conf':conf});
+});
+
 router.get('/error', function(req, res) {
   res.render('error',{'conf':conf});
 });

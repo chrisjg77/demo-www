@@ -22,13 +22,19 @@
 
   <body>
 
-    <header class="text-centered">
-      <div class="brand">{{{conf.title}}}</div>
+    <div class="slide-panel">
+    </div>
+
+    <header class="text-centered animated">
+      <a href="/"><div class="brand"><img src="{{{conf.brand}}}" /></div></a>
+      <h1 class="hidden">{{{conf.title}}}</h1>
     </header>
 
     <nav class="nav header text-centered">
       {{#each conf.pages}}
          <a href="{{{this.path}}}">{{{this.title}}}</a>
       {{/each}}
+      <a href="/search"><span class="ion ion-search"></span></a>
     </nav>
 
+    <main>

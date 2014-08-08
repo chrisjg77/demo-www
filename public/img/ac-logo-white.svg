@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="761px" height="354px" viewBox="0 0 761 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>ac-logo 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-1017.000000, -100.000000)">
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="927" y="0" width="959" height="564"></rect>
+        </g>
+        <g id="Group-2" sketch:type="MSLayerGroup" transform="translate(4.000000, 4.000000)">
+            <g id="Group" transform="translate(219.000000, 0.000000)" sketch:type="MSShapeGroup" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M316.337276,129.453589 C301.419549,55.6018798 236.198488,0 158,0 C81.4417942,0 16.8162837,54.8172147 -0.257392073,129.453588" id="Oval-2" stroke="#F2F2F2" stroke-width="8"></path>
+                <path d="M304.268234,131.601695 C290.420837,62.9962818 229.879314,11.3442623 157.29148,11.3442623 C86.2262395,11.3442623 26.2375368,62.2673579 10.3888782,131.601694" id="Oval-4" stroke="#B4B4B4" stroke-width="2"></path>
+                <path d="M304.976754,333.671367 C291.129357,265.065954 230.587834,213.413934 158,213.413934 C86.9347597,213.413934 26.946057,264.33703 11.0973984,333.671366" id="Oval-5" stroke="#B4B4B4" stroke-width="2" transform="translate(158.000000, 273.680328) scale(1, -1) translate(-158.000000, -273.680328) "></path>
+                <path d="M316.337276,345.703589 C301.419549,271.85188 236.198488,216.25 158,216.25 C81.4417942,216.25 16.8162837,271.067215 -0.257392073,345.703588" id="Oval-3" stroke="#F2F2F2" stroke-width="8" transform="translate(158.000000, 281.125000) scale(1, -1) translate(-158.000000, -281.125000) "></path>
+            </g>
+            <text id="ACTION-COMMITTEE" sketch:type="MSTextLayer" font-family="Gotham" font-size="70" font-weight="bold" sketch:alignment="middle" fill="#FFFFFF">
+                <tspan x="0.32" y="197">ACTION COMMITTEE</tspan>
+            </text>
+            <text id="THE" sketch:type="MSTextLayer" font-family="Gotham" font-size="32" font-weight="260" sketch:alignment="middle" fill="#D6D6D6">
+                <tspan x="342.752" y="112">THE</tspan>
+            </text>
+            <path d="M420.479497,101 L511.562469,101" id="Line" stroke="#B4B4B4" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M240.003772,102 L331.939886,102" id="Line-2" stroke="#B4B4B4" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M238.5,236 L516.005766,236" id="Line-3" stroke="#B4B4B4" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <polygon id="Star-1" fill="#F3F3F3" sketch:type="MSShapeGroup" points="319.403857 287.455383 308.288388 293.299131 310.411254 280.921874 301.41865 272.156252 313.846123 270.350435 319.403857 259.089234 324.961592 270.350435 337.389064 272.156252 328.396461 280.921874 330.519326 293.299131 "></polygon>
+            <polygon id="Star-2" fill="#F3F3F3" sketch:type="MSShapeGroup" points="378.027231 287.455383 366.911762 293.299131 369.034627 280.921874 360.042024 272.156252 372.469496 270.350435 378.027231 259.089234 383.584965 270.350435 396.012438 272.156252 387.019834 280.921874 389.1427 293.299131 "></polygon>
+            <polygon id="Star-3" fill="#F3F3F3" sketch:type="MSShapeGroup" points="437.596143 287.455383 426.480674 293.299131 428.603539 280.921874 419.610936 272.156252 432.038408 270.350435 437.596143 259.089234 443.153877 270.350435 455.58135 272.156252 446.588746 280.921874 448.711612 293.299131 "></polygon>
+        </g>
+    </g>
+</svg>

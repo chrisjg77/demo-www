@@ -7,12 +7,22 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 0.5em 1em;
+  height: 6em;
+
+  img {
+    height: 100%;
+  }
 }
 
 /*
  * Navigation.
  */
 .nav {
+  border-top: 1px solid lighten(@auto_dark,5%);
+  z-index: 998;
+  background: @header_bg_color;
+  .box-shadow(0 1px 2px fadeout(#000,40%));
+
   &.header {
     a {
       font-weight: 400;
@@ -21,23 +31,52 @@
       text-transform: uppercase;
       font-size: 0.83em;
       letter-spacing: 0.1em;
-      padding: 0.5em 1em;
+      padding: 1.6em 1em 1.3em;
+      border-bottom: 2px solid @auto_dark;
     }
 
     a:hover {
+      border-bottom: 2px solid @auto_light;
       color: @auto_light;
     }
   }
 }
 
 /*
+ * A slide down panel for more nav content.
+ */
+.slide-panel {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: darken(@auto_dark,5%);
+  height: 0;
+  .transition(height 0.375s);
+}
+.panel-partial {
+  height: 5em;
+}
+
+/*
  * Featured Content.
  */
 .featured {
-  margin-top: @header_h;
+  position: relative;
+  margin-top: -1em;
   overflow: hidden;
   background: @auto_light;
   height: 12em;
+
+  h1 {
+    color: @light;
+    font-size: 2.1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    color: fadeout(@light, 40%);
+  }
 
   @media screen and (min-width: @break_sm) {
     height: 20em;
@@ -51,6 +90,12 @@
   @media screen and (min-width: @break_xl) {
     height: 36em;
   }
+}
+.featured-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  .transform(translateY(-50%));
 }
 
 /*
@@ -72,18 +117,29 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.2);
+    background: fadeout(#000,50%);
   }
+}
+
+.bg-blur {
+  .filter(blur(8px));
 }
 
 /*
  * Content Feeds.
  */
 .feed {
+  padding: 1em;
 }
+.feed-filter {
+  padding: 1em 1%;
+}
+
 
 .post {
   opacity: 0;
+  cursor: pointer;
+  .box-shadow(0 1px 2px @auto_light);
   .transform(translateY(100%));
   .transition(all 0.475s); // @todo - fix problem with Masonry
 
@@ -91,6 +147,12 @@
     opacity: 1;
     .transform(translateY(0));
   }
+}
+
+.post:active {
+  .transition(all 0.175s);
+  .box-shadow(0 1px 2px darken(@auto_light,10%));
+  .transform(translateY(2px));
 }
 
 .post-title {
@@ -107,4 +169,43 @@
   img {
     width: 100%;
   }
+}
+
+.post:hover {
+  .meta {
+    color: @auto_medium;
+  }
+}
+
+.meta {
+  color: @auto_light;
+  margin-bottom: 0;
+  .transition(all 0.275s);
+}
+.post-meta {
+  padding: 0.25em @post_padding @post_padding;
+}
+
+
+.button {
+  padding: 0.25em 1em;
+  background: @action_button_color;
+}
+
+.button-emphasis {
+  font-size: 1.2em;
+  opacity: 1;
+  color: #fefefe;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+  .border-radius(2px);
+}
+
+.button-emphasis:hover {
+  border: 1px solid rgba(0,0,0,0);
+  background: lighten(@action_button_color,10%);
+}
+
+.button-active {
+  opacity: 1;
+  border: 1px solid @auto_medium;
 }

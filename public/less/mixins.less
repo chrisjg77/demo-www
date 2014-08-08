@@ -15,13 +15,27 @@
   .transform(translateX(-50%) translateY(-50%)); // May need Z value 0.1 if blurry text
 }
 
+// Make text hidden but readable for accessbility.
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -10000px;
+}
+
 /*
- * Text Formatting
+ * Block Formatting
  */
 .space {
   &.top {
     margin-top: 4em;
   }
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }
 
 /*
@@ -41,7 +55,12 @@
 /*
  * Mixins from CSS Tricks. (Some modification by Chris Griffith)
  * http://css-tricks.com/snippets/css/useful-css3-less-mixins/
+ *
+ * Modifications by Chris Griffith
+ * --
+ * 08.07.2014 - Added .filter for webkit filters
  */
+
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
   text-shadow: @string;
 }
@@ -157,10 +176,16 @@
   -o-transform:      rotate(@deg);
 }
 .skew (@deg, @deg2) {
-  -webkit-transform:       skew(@deg, @deg2);
+  -webkit-transform: skew(@deg, @deg2);
   -moz-transform:    skew(@deg, @deg2);
   -ms-transform:     skew(@deg, @deg2);
   -o-transform:      skew(@deg, @deg2);
+}
+.filter (@arg) {
+  -webkit-filter: @arg;
+  -moz-filter:    @arg;
+  -ms-filter:     @arg;
+  -o-filter:      @arg;
 }
 .translate (@x, @y:0) {
   -webkit-transform:       translate(@x, @y);
@@ -169,7 +194,7 @@
   -o-transform:      translate(@x, @y);
 }
 .translate3d (@x, @y: 0, @z: 0) {
-  -webkit-transform:       translate3d(@x, @y, @z);
+  -webkit-transform: translate3d(@x, @y, @z);
   -moz-transform:    translate3d(@x, @y, @z);
   -ms-transform:     translate3d(@x, @y, @z);
   -o-transform:      translate3d(@x, @y, @z);

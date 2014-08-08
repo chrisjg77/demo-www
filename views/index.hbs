@@ -1,16 +1,32 @@
 {{> header}}
 
 <section class="featured">
-  <div class="video-bg">
-    <video src="/video/stock-video.mp4" autoplay loop></video>
+  <div class="video-bg bg-blur">
+    <video src="/video/shaking-hands.mov" autoplay loop></video>
   </div>
-  <div class="wrapper content">
-    <h1 class="text-centered">Just for looks.</h1>
+  <div class="featured-content">
+    <div class="wrapper content text-centered">
+      <h1>Take A Stand with the Action Committee.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam quis libero ex, molestias et a, quasi veniam minima beatae impedit rerum? Deserunt corporis, tempore.</p>
+      <br>
+      <button class="button button-emphasis">Take A Stand Now</button>
+    </div>
   </div>
 </section>
 
-<div class="grid">
-  <main class="feed block block-md-9">
+<div class="grid content-main">
+  <section class="feed block block-md-8 block-xl-9">
+
+    <nav class="feed-filter clearfix">
+      <div class="button-group">
+        <button data-tag="all" class="button-active">All</button>
+        <button data-tag="all">News</button>
+        <button data-tag="all">Blog</button>
+        <button data-tag="all">Social</button>
+        <button data-tag="all">Media</button>
+      </div>
+    </nav>
+
     <div class="masonry">
     {{#each data.posts}}
       <article class="post block">
@@ -21,12 +37,14 @@
         {{/if}}
         <h3 class="title post-title">{{{this.title}}}</h3>
         <p class="excerpt post-excerpt">{{{this.excerpt}}}</p>
+
+        <p class="meta post-meta"><span class="ion ion-share"></span></p>
       </article>
     {{/each}}
     </div>
-  </main>
+  </section>
 
-  <aside class="block block-md-3">
+  <aside class="block block-md-4 block-xl-3">
 
   </aside>
 </div>
