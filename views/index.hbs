@@ -29,7 +29,16 @@
 
     <div class="masonry">
     {{#each data.posts}}
-      <article class="post block">
+      <article class="post block {{{this.type}}}">
+        {{#ifCond this.type 'twitter'}}
+        <div class="twitter-profile">
+          <div class="profile-crop">
+            <img src="http://api.randomuser.me/portraits/men/9.jpg" />
+          </div>
+          <em class="twitter-handle">@oscarwhite</em>
+        </div>
+
+        {{/ifCond}}
         {{#if this.image}}
         <div class="image post-image">
           <img src="{{{this.image}}}" />
@@ -38,7 +47,19 @@
         <h3 class="title post-title">{{{this.title}}}</h3>
         <p class="excerpt post-excerpt">{{{this.excerpt}}}</p>
 
-        <p class="meta post-meta"><span class="ion ion-share"></span></p>
+        {{#if this.tags}}
+        <div class="post-tags">
+          {{#each this.tags}}
+          <button>{{{this}}}</button>
+          {{/each}}
+        </div>
+        {{/if}}
+
+{{!--         {{#ifCond this.type 'twitter'}}
+          <span class="ion ion-social-twitter"></span><p class="meta post-meta">1,083 Favorites</p>
+        {{/ifCond}} --}}
+
+        {{!-- <p class="meta post-meta"><span class="ion ion-share"></span></p> --}}
       </article>
     {{/each}}
     </div>

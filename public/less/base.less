@@ -61,6 +61,7 @@ section {
 
 main {
   background: @auto_lighter;
+  .transition(all 0.375s);
 }
 
 article {
@@ -71,6 +72,7 @@ aside {
   min-height: 1000px;
   float: right;
   background: @light;
+  .box-shadow(-1px 0 2px darken(@auto_light,10%));
 }
 
 footer {
@@ -90,11 +92,11 @@ footer {
   }
 
   h3 {
-    color: @auto_medium;
-    font-weight: 100;
+    color: darken(@auto_medium,5%);
+    font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 1.4em;
-    font-size: 0.87em;
+    font-size: 0.7em;
   }
 
   p {
@@ -103,7 +105,6 @@ footer {
 
     a {
       display: inline-block;
-      font-size: 1em;
     }
   }
 
@@ -123,11 +124,12 @@ button {
   outline: none;
   font-family: @main_font_stack;
   background: none;
-  border: 1px solid transparent;
-  font-size: 16px;
+  border: 1px solid @auto_medium;
+  font-size: 14px;
   padding: 0.15em 1em;
   opacity: 0.5;
   cursor: pointer;
+  margin: 0 0.2em 0 0;
   .transition(all 0.275s);
   .border-radius(25px);
   .box-shadow(none);

@@ -15,6 +15,8 @@ var data = {
   posts: [
     {
       type: 'article',
+      tags: ['News','Politics'],
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -23,6 +25,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -30,6 +33,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -37,15 +41,14 @@ var data = {
       image: 'https://placeimg.com/800/395/people'
     },
     {
-      type: 'article',
-      title: 'This Post Tho',
+      type: 'twitter',
       date: '',
       author: '',
       excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum aliquid voluptate iusto corrupti fugiat pariatur eveniet rem, at dolor ratione asperiores soluta nisi maiores.',
-      image: 'https://placeimg.com/800/300/arch'
     },
     {
       type: 'tweet',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -53,6 +56,7 @@ var data = {
     },
        {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -61,6 +65,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -68,6 +73,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -76,6 +82,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -84,6 +91,7 @@ var data = {
     },
     {
       type: 'tweet',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -91,6 +99,7 @@ var data = {
     },
         {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -99,6 +108,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -106,6 +116,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -114,6 +125,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -122,6 +134,7 @@ var data = {
     },
     {
       type: 'tweet',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -129,6 +142,7 @@ var data = {
     },
        {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -137,6 +151,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -144,6 +159,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -152,6 +168,7 @@ var data = {
     },
     {
       type: 'article',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',
@@ -160,6 +177,7 @@ var data = {
     },
     {
       type: 'tweet',
+      tags: ['News','Politics'],
       title: 'This Post Tho',
       date: '',
       author: '',

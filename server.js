@@ -21,6 +21,12 @@ hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('stringify', function (data) {
     return JSON.stringify(data);
 });
+hbs.registerHelper('ifCond', function(v1, v2, options) {
+  if(v1 === v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
 
 server.use(favicon());
 server.use(logger('dev'));

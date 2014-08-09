@@ -5,23 +5,23 @@ var conf = {
   pages: [
     {
       title: 'About',
-      path: '/about'
+      path: '#'
     },
     {
       title: 'Issues',
-      path: '/issues'
+      path: '#'
     },
     {
       title: 'Join',
-      path: '/join'
+      path: '#'
     },
     {
       title: 'Take Action',
-      path: '/action'
+      path: '#'
     },
     {
       title: 'Contact',
-      path: '/contact'
+      path: '#'
     }
   ],
   typekit: 'tvf5sur',
