@@ -480,17 +480,17 @@ button:focus {
  * Video Backgrounds and Videos.
  */
 .video-bg {
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  top: 37%;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 .video-bg video {
-  width: 100%;
+  width: 120%;
 }
 .video-bg::before {
   content: "";
@@ -603,7 +603,13 @@ button:focus {
 .post-tags {
   padding: 0 1em 1em;
 }
+.post-tags button:first-child {
+  background: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  color: #fefefe;
+}
 .post-excerpt {
+  margin-bottom: 0;
   padding: 0.25em 1em 1em;
 }
 .post-image {
@@ -616,7 +622,7 @@ button:focus {
   color: #777777;
 }
 .meta {
-  color: #dcdcdc;
+  color: #777777;
   margin-bottom: 0;
   -webkit-transition: all 0.275s;
   -moz-transition: all 0.275s;
@@ -644,6 +650,11 @@ button:focus {
 .button {
   padding: 0.25em 1em;
   background: #27ae60;
+}
+.button-solid {
+  background: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  color: #fefefe;
 }
 .button-emphasis {
   font-size: 1.2em;

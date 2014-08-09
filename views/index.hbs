@@ -33,12 +33,12 @@
         {{#ifCond this.type 'twitter'}}
         <div class="twitter-profile">
           <div class="profile-crop">
-            <img src="http://api.randomuser.me/portraits/men/9.jpg" />
+            <img src="{{{this.avatar}}}" />
           </div>
-          <em class="twitter-handle">@oscarwhite</em>
+          <em class="twitter-handle">{{{this.author}}}</em>
         </div>
-
         {{/ifCond}}
+
         {{#if this.image}}
         <div class="image post-image">
           <img src="{{{this.image}}}" />
@@ -55,9 +55,11 @@
         </div>
         {{/if}}
 
-{{!--         {{#ifCond this.type 'twitter'}}
-          <span class="ion ion-social-twitter"></span><p class="meta post-meta">1,083 Favorites</p>
-        {{/ifCond}} --}}
+        {{#ifCond this.type 'twitter'}}
+        <div class="meta post-meta">
+          <span class="ion ion-social-twitter"></span>{{!-- <p class="meta post-meta">1,083 Favorites</p> --}}
+        </div>
+        {{/ifCond}}
 
         {{!-- <p class="meta post-meta"><span class="ion ion-share"></span></p> --}}
       </article>

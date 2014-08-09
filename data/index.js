@@ -43,7 +43,8 @@ var data = {
     {
       type: 'twitter',
       date: '',
-      author: '',
+      avatar: 'http://api.randomuser.me/portraits/men/9.jpg',
+      author: '@oscarwhite',
       excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum aliquid voluptate iusto corrupti fugiat pariatur eveniet rem, at dolor ratione asperiores soluta nisi maiores.',
     },
     {
@@ -122,6 +123,13 @@ var data = {
       author: '',
       excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum aliquid voluptate iusto corrupti fugiat pariatur eveniet rem, at dolor ratione asperiores soluta nisi maiores.',
       image: 'https://placeimg.com/800/395/people'
+    },
+    {
+      type: 'twitter',
+      date: '',
+      avatar: 'http://api.randomuser.me/portraits/men/14.jpg',
+      author: '@ollie',
+      excerpt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     },
     {
       type: 'article',

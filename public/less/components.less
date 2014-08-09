@@ -112,13 +112,15 @@
  * Video Backgrounds and Videos.
  */
 .video-bg {
-  .smack-dab-middle;
+  .transform(translate3d(-50%,-50%,0));
+  top: 37%;
+  left: 50%;
 
-  position: absolute;
+  position: fixed;
   width: 100%;
 
   video {
-    width: 100%;
+    width: 120%;
   }
 
   // Overlay prevents user controlling video with right-click
@@ -209,7 +211,11 @@
 .post-tags {
   padding: 0 @post_padding @post_padding;
 }
+.post-tags button:first-child {
+  .button-solid;
+}
 .post-excerpt {
+  margin-bottom: 0;
   padding: 0.25em @post_padding @post_padding;
 }
 
@@ -228,7 +234,7 @@
 }
 
 .meta {
-  color: @auto_light;
+  color: @auto_medium;
   margin-bottom: 0;
   .transition(all 0.275s);
 }
@@ -256,6 +262,12 @@
 .button {
   padding: 0.25em 1em;
   background: @action_button_color;
+}
+
+.button-solid {
+  background: @auto_dark;
+  border: 1px solid @auto_dark;
+  color: @light;
 }
 
 .button-emphasis {
